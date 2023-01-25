@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+}
+
+#wrapper{
+    overflow-x:hidden;
+    overflow-y:auto;
+    /* display: flex; */
+    position: relative;
+    height:100vh;
+    perspective:100px;
+    /* z-index: -1; */
+}
+
+
+.parallaxContainer {
+    display:flex;
+    position: relative;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    object-fit: cover;
+    z-index: -1;
+    transform-style: preserve-3d;
+}
+
+.background{
+    transform: translateZ(-250px) scale(2.13);
+}
+
+.foreground{
+    transform:translateZ(-130px) scale(1.40);
+}
+
+.text {
+    position: absolute;
+    align-self: flex-start;
+    top:20%;
+    font-size: 10rem;
+    letter-spacing:4px;
+    color:white;
+    z-index: -1;
+    text-shadow: 1px 1px 6px gray;
+}
+
+.adventureHeading {
+    padding:0 10rem;
+    font-size:4rem;
+}
+
+.imageplusText{
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-size: cover;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+}
+
+section{
+    padding:5rem 0;
+    color:white;
+    background-color:rgb(45,45,45);
+}
+
+.image1 {
+    background-image:url(/image_Section/sport-1.jpg);
+}
+
+.image2 {
+    background-image:url(/image_Section/sport-2.jpg);
+}
+
+.image3 {
+    background-image:url(/image_Section/sport-3.jpg);
+}
+
+.desc{
+    position:absolute;
+    padding: 0.5rem 2.5rem;
+    background-color:white;
+    color:black;
+    font-size:40px;
+}
+
+.textPart {
+    font-size:1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.background, .foreground {
+    position:absolute;
+    object-fit:cover;
+    z-index: -1;
+}
+
+
+
